@@ -1,0 +1,12 @@
+Worst case senario: O(n^2) 
+(BigO of n squared)
+
+This is because for every value 2 to n, n - 2 comparisions 
+are made to check if the number has a divisor.
+
+
+Best case senaro: n = 2
+
+O(1)
+
+1 comparision is made.
