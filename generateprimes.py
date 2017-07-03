@@ -3,11 +3,13 @@ import unittest
 def generate_primes(n):
     """generates prime numbers from 0 to n"""
     
+    if type(n) != type(0) or type(n) != type(0.1):
+        raise ValueError("invalid input, expecting a number")
 
 class GeneratePrimeTest(unittest.TestCase):
 
     def test_throws_error_if_input_is_not_numeric(self):
-        with self.assertRaises(TypeError):
+        with self.assertRaises(ValueError):
              generate_primes("99")
              generate_primes([])
              generate_primes({})
