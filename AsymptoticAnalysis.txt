@@ -4,7 +4,7 @@ Worst case senario: O(n^2)
 This is because n - 2 comparisions are made every n-2 times 
 to check if the number has a divisor.
 
-Best case senaro: n = 2
+Best case senaro: n = 0, 1, 2
 
 O(1)
 
